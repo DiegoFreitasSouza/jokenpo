@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 
-
+/* ANUNCIO DO GANHADOR */
 .winner-title {
 background-color: #0099FF;
 color: #FFFFFF;
@@ -26,11 +26,42 @@ border-radius: 12px 12px 0px 0px;
 font-size: 33px;
 }
 
+
+/* PLACAR */
 .scoreboard-box {
  width: 50%;
  height: 148px;
  background-color: #0099FF;
  border-radius: 17px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 
 }
 
+/* DADOS DO PLACAR */
+.player-name{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-weight: 700;
+
+    }
+
+.score{
+    background-color: #dbf1ff;
+    display: flex;
+    width: 131px;
+    height: 120px;
+    font-weight:  900;
+    font-size: 104px;
+    color: #0099FF;
+    border-radius: 17px;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator{
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 900;
+}
