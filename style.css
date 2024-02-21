@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -29,7 +30,7 @@ font-size: 33px;
 
 /* PLACAR */
 .scoreboard-box {
- width: 50%;
+ width: 60%;
  height: 148px;
  background-color: #0099FF;
  border-radius: 17px;
@@ -64,4 +65,132 @@ font-size: 33px;
     color: #FFFFFF;
     font-size: 58px;
     font-weight: 900;
+}
+
+/* área principal */
+.battle-field {
+ margin-top: 2%;
+ width: 100%;
+ height: 45%;
+ display: flex;
+ justify-content: space-between;
+ padding: 0 2%;
+ gap: 16px;
+}
+
+
+/* botoes de ação */
+.button-move-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+
+.button-move{
+    height: 80px;
+    width: 220px;
+    background-color: #0099FF;
+    color: #FFFFFF;
+    font-size: 44px;
+    border-radius: 8px;
+    border: 1px solid #0099FF;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.button-move:hover{
+    background-color: #FFFFFF;
+    color: #0099FF;
+}
+
+/* BOTOES DE CONFIGURAÇÃO */
+
+.config-box{
+    display: flex;
+    gap: 100px;
+    margin-top: 22px;
+
+}
+
+/* ÁREA DE JOGADAS */
+.board{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 35px;
+    border-radius: 17px;
+    background-color: #0099FF;
+ 
+}
+
+.move-box{
+    width: 36%;
+    height: 100%;
+    background-color: #dbf1ff;
+    border-radius: 17px;
+}
+
+.move-box-separator{
+    font-size: 104px;
+    color:#FFFFFF ;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 720px) {
+    body{
+        padding: 1%;
+        justify-content: space-evenly;
+
+    }
+    
+    .player-name{
+        display: none;
+    }
+
+    .winner-title{
+        width: 90%;
+    }
+
+    .scoreboard-box{
+        width: 100%;
+    }
+
+    .config-box{
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .battle-field{
+        flex-direction: column;
+    }
+
+    .button-move-wrapper{
+        flex-direction: row;
+        height: unset;
+
+    }
+
+    .button-move{
+        font-size: 25px;
+        width: 115px;
+    }
+
+    .move-box-separator{
+        font-size: 20px;
+    }
+
+    .board{
+        padding: 10px;
+    }
+
+    .move-box{
+        width: 40%;
+    }
+
+    .
 }
